@@ -8,3 +8,8 @@ typedef uint32_t u32;
 #define __iomem
 
 #define ARRAY_SIZE(x) sizeof(x) / sizeof(*x)
+
+#define BIT(x) (1 << (x))
+
+#define round_down(x, y) ((x) - (x) % (y))
+
