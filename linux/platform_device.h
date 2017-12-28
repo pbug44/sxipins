@@ -27,3 +27,5 @@ void driver_register(struct platform_driver *, const char *);
 #define module_platform_driver(x) \
   __attribute__((constructor)) static void driver_init() \
     { driver_register(&x, #x); }
+
+#define dev_warn(dev, msg)

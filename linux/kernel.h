@@ -1,3 +1,4 @@
+#include <errno.h>
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -12,4 +13,3 @@ typedef uint32_t u32;
 #define BIT(x) (1 << (x))
 
 #define round_down(x, y) ((x) - (x) % (y))
-
