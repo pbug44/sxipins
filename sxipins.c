@@ -25,6 +25,8 @@ sunxi_pinctrl_init_with_variant(struct platform_device *pdev,
 	/* Linux developers need a bit more OCD. */
 	if (strcmp(name, "a64") == 0)
 		name = "sun50i_a64";
+	if (strcmp(name, "h6") == 0)
+		name = "sun50i_h6";
 
 	if (header) {
 		printf("/* Public Domain */\n");
