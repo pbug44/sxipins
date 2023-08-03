@@ -28,6 +28,9 @@ sunxi_pinctrl_init_with_variant(struct platform_device *pdev,
 	if (strcmp(name, "h6") == 0)
 		name = "sun50i_h6";
 
+	if (strcmp(name, "sun8i_v3s") == 0 && variant == PINCTRL_SUN8I_V3)
+		name = "sun8i_v3";
+
 	if (header) {
 		printf("/* Public Domain */\n");
 		printf("\n");

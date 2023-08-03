@@ -29,3 +29,9 @@ void driver_register(struct platform_driver *, const char *);
     { driver_register(&x, #x); }
 
 #define dev_warn(dev, msg)
+int dev_err_probe(const struct device *, int, const char *, ...);
+
+static inline int platform_irq_count(struct platform_device *dev)
+{
+	return 3;
+}
