@@ -36,7 +36,7 @@ sunxi_pinctrl_init_with_variant(struct platform_device *pdev,
 
 	printf("\n");
 
-	printf("struct sxipio_pin %s_pins[] = {\n", name);
+	printf("const struct sxipio_pin %s_pins[] = {\n", name);
 	for (i = 0; i < desc->npins; i++) {
 		if (desc->pins[i].variant != 0 &&
 		    (desc->pins[i].variant & variant) == 0)
