@@ -89,6 +89,9 @@ driver_register(struct platform_driver *driver, const char *name)
 		case PINCTRL_SUN8I_R40:
 			pdev.name = "sun8i_r40_pinctrl_driver";
 			break;
+		case PINCTRL_SUN20I_D1:
+			pdev.name = "sun20i_d1_pinctrl_driver";
+			break;
 		default:
 			pdev.name = name;
 			break;
